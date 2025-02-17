@@ -1,0 +1,49 @@
+@use './colors' as *;
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+	&--nav-active {
+		transform: translateX(-100%);
+	}
+}
+
+.section-heading {
+	position: relative;
+	margin: 20px;
+	padding-bottom: 10px;
+	font-size: 2.5rem;
+	font-weight: 400;
+	// text-transform: uppercase;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 80%;
+		height: 1px;
+		background-color: $dark-gray;
+	}
+}
+
+.textbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 40px 0;
+	padding: 0 5%;
+	width: 100%;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+}

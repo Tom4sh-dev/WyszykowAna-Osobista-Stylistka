@@ -1,0 +1,169 @@
+@use './hamburger' as *;
+@use './colors' as *;
+@use './components' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+	color: $dark-gray;
+}
+
+.page {
+	font-family: 'Montserrat', serif;
+	color: $dark-gray;
+}
+
+// HEADER
+
+.header {
+	display: flex;
+
+	.heading {
+		width: 80%;
+		padding: 20px;
+		&__brand {
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: $raspberry;
+			}
+		}
+		&__logo-img {
+			width: 80%;
+		}
+		&__subbrand {
+			margin-top: 10px;
+			padding: 5px;
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+		&__name {
+			padding: 5px;
+			font-size: 2rem;
+			font-weight: 400;
+		}
+	}
+
+	.hamburger {
+		position: fixed;
+		top: 15px;
+		right: 15px;
+		border-radius: 5px;
+		z-index: 100;
+	}
+
+	.nav {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		&__list {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 100;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: $white;
+			list-style: none;
+			transition: transform 0.5s;
+			transform: translateX(100%);
+			&--active {
+				transform: translatex(0);
+			}
+		}
+		&__item {
+			position: relative;
+			margin: 30px;
+			width: 50%;
+			text-transform: uppercase;
+			&:hover {
+				background-color: $raspberry;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 1px;
+				width: 100%;
+				background-color: $raspberry;
+			}
+		}
+		&__link {
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			font-size: 2.5rem;
+			color: $dark-gray;
+			text-decoration: none;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+// MAIN
+
+.main {
+	// BANNER
+
+	.banner {
+		margin-bottom: 40px;
+		&__img-box {
+			background-color: $light-gray;
+			margin-bottom: 20px;
+		}
+		&__image {
+			display: block;
+			width: 100%;
+		}
+		
+		&__btn {
+			padding: 10px 20px;
+			margin-right: 10px;
+			align-self: end;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 1.5rem;
+			font-family: inherit;
+			color: $light-gray;
+			background-color: $raspberry;
+			border: none;
+			cursor: pointer;
+			transition: .3s;
+			&:hover{
+				background-color: $dark-gray;
+				color: $light-gray;
+			}
+		}
+	}
+	// ABOUTME
+
+	.about-me {
+		background-color: $light-gray;
+		&__img-box {
+			width: 100%;
+			text-align: center;
+		}
+		&__image {
+			width: 80%;
+		}
+	}
+}
