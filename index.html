@@ -26,6 +26,8 @@
 		/>
 		<!-- AOS -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- Font Awsome -->
+		<script src="https://kit.fontawesome.com/a7bcfeba04.js" crossorigin="anonymous"></script>
 		<!-- Main styles -->
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
@@ -69,7 +71,7 @@
 		<main class="main">
 			<div class="wrapper">
 				<section class="banner section">
-					<div class="banner__img-box">
+					<div class="banner__img-box img-box">
 						<img
 							class="banner__image"
 							src="./img/header 640.png"
@@ -100,8 +102,8 @@
 					<h2 class="section-heading about-me__heading">O mnie</h2>
 					<div class="about-me__textbox textbox">
 						<p class="textbox__text">
-							<b>Cześć!</b> Mam na imię Anastazja. Od zawsze pasjonowałam się modą,
-							stylami i grą kolorów. Z biegiem czasu zauważyłam, że wiele
+							<b>Cześć!</b> Mam na imię Anastazja. Od zawsze pasjonowałam się
+							modą, stylami i grą kolorów. Z biegiem czasu zauważyłam, że wiele
 							kobiet, mimo noszenia najnowszych trendów, nie wygląda w nich tak
 							dobrze, jak by mogły. Sama, przez długi czas, popełniałam podobne
 							błędy — wybierałam ubrania, które były modne, ale niekoniecznie
@@ -109,34 +111,168 @@
 							dlaczego tak się dzieje? „Po prostu jej nie pasuje” to dla mnie
 							było zbyt proste wytłumaczenie.
 						</p>
-                        </div>
-						<div class="about-me__img-box">
-                            <img
+					</div>
+					<div class="about-me__img-box img-box">
+						<img
 							class="about-me__image"
 							src="./img/about 640.jpg"
 							alt="Zdjęcie portretowe z paletami kolorystycznymi"
 						/>
-                        </div>
-                <div class="about-me__textbox textbox">
+					</div>
+					<div class="about-me__textbox textbox">
 						<p class="textbox__text">
 							To pytanie zaprowadziło mnie na ścieżkę analizy kolorystycznej,
 							którą zgłębiałam poprzez liczne kursy i szkolenia, zdobywając
 							certyfikaty, które potwierdzają moją wiedzę. Dziś wiem, że
 							odpowiedni dobór kolorów oraz stylizacji może zdziałać prawdziwe
 							cuda — podkreśla naturalną urodę, sprawia, że czujemy się pewniej
-							i bardziej autentycznie. 
+							i bardziej autentycznie.
 						</p>
 					</div>
-                <div class="about-me__textbox textbox">
+					<div class="about-me__textbox textbox">
 						<p class="textbox__text">
-						Pomogłam już wielu zadowolonym klientkom
-							odnaleźć ich idealne kolory i stworzyć garderoby, które pasują do
-							ich stylu i osobowości. Teraz z radością podzielę się tymi
-							doświadczeniami także z Tobą!
+							Pomogłam już wielu zadowolonym klientkom odnaleźć ich idealne
+							kolory i stworzyć garderoby, które pasują do ich stylu i
+							osobowości. Teraz z radością podzielę się tymi doświadczeniami
+							także z Tobą!
 						</p>
 					</div>
 				</div>
 			</section>
+
+			<!-- OFFER -->
+
+			<div class="wrapper">
+				<section id="offer" class="offer section">
+					<h2 class="section-heading offer__heading">Oferta</h2>
+
+					<div class="offer__item">
+						<div class="offer__top-box">
+                            <h3 class="offer__title">Analiza <strong>kolorystyczna</strong></h3>
+                            <button class="offer__btn"><i class="fa-sharp fa-solid fa-angle-right"></i></button>
+							<p class="offer__subtitle">Poznasz <strong>kolory</strong>, w których promieniejesz!</p>
+							<div class="offer__img-box img-box">
+								<img src="./img/analysis 640.jpg" alt="Paleta kolorystyczna" class="offer__image" />
+							</div>
+						</div>
+                        <div class="offer__textbox textbox">
+                            <p class="textbox__text">
+                                <p>Czy wiesz, <strong>jakie kolory najlepiej podkreślają Twoją urodę?</strong> Profesjonalna analiza kolorystyczna pozwoli Ci odkryć paletę barw, które idealnie współgrają z Twoim odcieniem skóry, kolorem oczu i włosów. 
+                                </p>
+                                <br>
+                               <p class="offer__list-title"><strong>Dzięki temu:</strong></p>
+                               <ul class="offer__list textbox">
+                                   <li>Nauczysz się wybierać kolory, które podkreślą Twoje naturalne piękno.</li>
+                                   <li>Zaoszczędzisz czas i pieniądze podczas zakupów.</li>
+                                   <li>Stworzysz spójną i harmonijną garderobę.</li>
+                                </ul>
+                                <br>
+                                
+                                <p class="offer__list-title"><strong>W ramach analizy:</strong></p>
+                                <ul class="offer__list textbox">
+                                    <li>Zidentyfikuję Twój typ urody (wiosna, lato, jesień, zima).</li>
+                                    <li>Przeanalizujemy Twoje kolory ubrań, makijażu i dodatków.</li>
+                                    <li>Otrzymasz indywidualną paletę kolorów oraz wskazówki, jak je wykorzystywać na co dzień.</li>
+                                 </ul>
+                            </p>
+                        </div>
+                        <!-- <div class="offer__more textbox offer__more--active">
+                            <p class="textbox__text">
+                                Pomogłam już wielu zadowolonym klientkom odnaleźć ich idealne
+                                kolory i stworzyć garderoby, które pasują do ich stylu i
+                                osobowości. Teraz z radością podzielę się tymi doświadczeniami
+                                także z Tobą!
+                            </p>
+                        </div> -->
+					</div>
+
+					<div class="offer__item">
+						<div class="offer__top-box">
+                            <h3 class="offer__title">Analiza <strong>sylwetki</strong></h3>
+                            <button class="offer__btn"><i class="fa-sharp fa-solid fa-angle-right"></i></button>
+							<p class="offer__subtitle">Dobiorę ubrania do Twojej 
+                                 <strong>figury!</strong></p>
+							<div class="offer__img-box img-box">
+								<img src="./img/body 640.jpg" alt="Manekin krawiecki" class="offer__image offer__image-horizontal"/>
+							</div>
+						</div>
+                        <div class="offer__textbox textbox">
+                            <p class="textbox__text">
+                                <p>Zrozumienie swojej sylwetki to klucz do budowania garderoby, która podkreśli Twoje atuty i ukryje mankamenty.
+                                </p>
+                                <br>
+                               <p class="offer__list-title"><strong>Pomogę Ci określić:</strong></p>
+                               <ul class="offer__list textbox">
+                                   <li>Twój typ sylwetki (np. klepsydra, jabłko, gruszka).</li>
+                                   <li>Jakie fasony ubrań najlepiej na Tobie leżą.</li>
+                                   <li>Jak unikać błędów stylizacyjnych.</li>
+                                </ul>
+                                <br>
+                                
+                                <p class="offer__list-title"><strong>W ramach analizy sylwetki dowiesz się:</strong></p>
+                                <ul class="offer__list textbox">
+                                    <li>Jakie kroje, długości i materiały najlepiej Ci pasują.</li>
+                                    <li>Jak zrównoważyć proporcje swojej figury za pomocą ubrań i dodatków.</li>
+                                    <li>Jak stworzyć garderobę, która zwiększy Twoją pewność siebie.</li>
+                                 </ul>
+                                 <br>
+
+                                <p class="offer__list-title"><strong>Dlaczego warto skorzystać z mojej oferty?</strong></p>
+                                <ul class="offer__list textbox">
+                                    <li>Indywidualne podejście – każda analiza jest dopasowana do Twoich potrzeb.</li>
+                                    <li>Wieloletnie doświadczenie w pracy z klientami.</li>
+                                    <li>Praktyczne porady, które możesz od razu wdrożyć.</li>
+                                 </ul>
+                            </p>
+                        </div>
+                        <!-- <div class="offer__more textbox offer__more--active">
+                            <p class="textbox__text">
+                                Pomogłam już wielu zadowolonym klientkom odnaleźć ich idealne
+                                kolory i stworzyć garderoby, które pasują do ich stylu i
+                                osobowości. Teraz z radością podzielę się tymi doświadczeniami
+                                także z Tobą!
+                            </p>
+                        </div> -->
+					</div>
+
+					<div class="offer__item">
+						<div class="offer__top-box">
+                            <h3 class="offer__title">Przegląd <strong>szafy</strong></h3>
+                            <button class="offer__btn"><i class="fa-sharp fa-solid fa-angle-right"></i></button>
+							<p class="offer__subtitle">Pomogę wybrać <strong>Twój ciuch!</strong></p>
+							<div class="offer__img-box img-box">
+								<img src="./img/wardrobe 640.png" alt="Kolaż zdjęć ubrań" class="offer__image offer__image-horizontal"/>
+							</div>
+						</div>
+                        <div class="offer__textbox textbox">
+                            <p class="textbox__text">
+                                <p>Masz pełną szafę, ale wciąż czujesz, że <strong>„nie masz się w co ubrać”?</strong></p>
+                                <br>
+                                <p><strong>Chciałabyś uporządkować swoje ubrania</strong>, ale nie wiesz, od czego zacząć? A może potrzebujesz pomocy w dobraniu kolorów i fasonów, które naprawdę pasują do Ciebie?</p>
+                                <br>
+
+                               <p class="offer__list-title"><strong>Pomogę Ci krok po kroku:</strong></p>
+                               <ul class="offer__list textbox">
+                                   <li><strong>Przegląd szafy:</strong> Razem przejrzymy Twoje ubrania i zdecydujemy, co naprawdę pasuje do Twojej urody i stylu, a co warto odpuścić.</li>
+                                   <li><strong>Kolory i fasony:</strong> Podpowiem, które kolory i kroje najlepiej harmonizują z Twoją osobowością i sylwetką.</li>
+                                   <li><strong>Decyzje bez stresu:</strong> Pomogę Ci podjąć decyzje o ubraniach, które warto zatrzymać, a które lepiej oddać, uwzględniając Twój styl życia i cele.</li>
+                                   <li><strong>Porządek w szafie:</strong> Doradzę, jak zorganizować ubrania, aby codzienne wybory były łatwiejsze.</li>
+                                </ul>
+                                <br>
+                                <p>Rezultat? <strong>Twoja szafa będzie przejrzysta,</strong> funkcjonalna i pełna rzeczy, które pasują do Ciebie, sprawiają, że czujesz się świetnie i zawsze wiesz, co na siebie włożyć!</p>
+                            </p>
+                        </div>
+                        <!-- <div class="offer__more textbox offer__more--active">
+                            <p class="textbox__text">
+                                Pomogłam już wielu zadowolonym klientkom odnaleźć ich idealne
+                                kolory i stworzyć garderoby, które pasują do ich stylu i
+                                osobowości. Teraz z radością podzielę się tymi doświadczeniami
+                                także z Tobą!
+                            </p>
+                        </div> -->
+					</div>
+				</section>
+			</div>
 		</main>
 
 		<!-- Nav -->
