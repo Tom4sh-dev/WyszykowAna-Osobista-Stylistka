@@ -9,7 +9,7 @@
   padding: 10px 10px;
   display: inline-block;
   cursor: pointer;
-  transition-property: rotate, filter;
+  transition-property: opacity, filter;
   transition-duration: 0.2s;
   transition-timing-function: linear;
   font: inherit;
@@ -22,7 +22,11 @@
 }
 
 .hamburger:hover {
-  rotate: 360deg;
+  opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
 }
 
 .hamburger.is-active .hamburger-inner,
@@ -121,7 +125,8 @@
 
 .section-heading {
   position: relative;
-  margin: 20px;
+  margin: 30px;
+  margin-bottom: 40px;
   padding-bottom: 10px;
   font-size: 2.5rem;
   font-weight: 400;
@@ -140,14 +145,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
-  padding: 0 5%;
+  margin: 0px 0 40px;
+  padding: 0 10%;
   width: 100%;
   font-size: 1.4rem;
   letter-spacing: 1px;
 }
 
 .img-box {
+  margin-bottom: 40px;
   width: 100%;
   text-align: center;
 }
@@ -274,6 +280,9 @@ html {
   display: block;
   width: 100%;
 }
+.main .banner__textbox {
+  margin-bottom: 20px;
+}
 .main .banner__btn {
   padding: 10px 20px;
   margin-right: 10px;
@@ -313,7 +322,6 @@ html {
 }
 .main .offer__top-box {
   position: relative;
-  padding-bottom: 40px;
   text-align: center;
 }
 .main .offer__title {
@@ -325,7 +333,7 @@ html {
 }
 .main .offer__btn {
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   padding: 10px 15px;
   color: #f0f0f0;
@@ -360,4 +368,98 @@ html {
 .main .offer__list {
   margin: 10px 0;
   align-items: start;
+}
+.main .offer__more {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  transition: transform 1s;
+  transform: translateX(-100%);
+}
+.main .offer__more--active {
+  transform: translatex(0);
+}
+.main .offer__more-title {
+  margin-top: 40px;
+  padding: 5px;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.main .offer__more-squares-box {
+  margin: 40px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.main .offer .square {
+  height: 40px;
+  width: 40px;
+}
+.main .offer__more-square1 {
+  background-color: #fff;
+}
+.main .offer__more-square2 {
+  background-color: #900c50;
+}
+.main .offer__more-square3 {
+  background-color: #5d1a7a;
+}
+.main .offer__more-square4 {
+  background-color: #00636a;
+}
+.main .offer__more-square5 {
+  background-color: #3c3b3b;
+}
+.main .offer__btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  color: #f0f0f0;
+  background-color: #900c50;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main .offer__btn-close:hover {
+  background-color: #f0f0f0;
+  color: #900c50;
+  padding: 10px 20px;
+}
+.main .offer__more-img {
+  margin-top: 30px;
+}
+.main .offer__more-logo {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.05;
+  scale: 2;
+}
+.main .offer__prices {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.main .offer__prices-title {
+  background-color: #900c50;
+  color: #f0f0f0;
+}
+.main .offer__prices-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0.05;
 }/*# sourceMappingURL=main.css.map */
