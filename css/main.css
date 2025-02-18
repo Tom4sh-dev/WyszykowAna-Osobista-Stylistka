@@ -177,39 +177,6 @@ html {
   color: #424242;
 }
 
-.header {
-  display: flex;
-}
-.header .heading {
-  width: 80%;
-  padding: 20px;
-}
-.header .heading__brand {
-  position: relative;
-}
-.header .heading__brand::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #900c50;
-}
-.header .heading__logo-img {
-  width: 80%;
-}
-.header .heading__subbrand {
-  margin-top: 10px;
-  padding: 5px;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-.header .heading__name {
-  padding: 5px;
-  font-size: 2rem;
-  font-weight: 400;
-}
 .header .hamburger {
   position: fixed;
   top: 15px;
@@ -272,34 +239,82 @@ html {
 
 .main .banner {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .main .banner__img-box {
   background-color: #f0f0f0;
+  margin-bottom: 0;
 }
 .main .banner__image {
   display: block;
   width: 100%;
 }
-.main .banner__textbox {
-  margin-bottom: 20px;
+.main .banner .heading {
+  width: 80%;
+  padding: 20px;
+}
+.main .banner .heading__brand {
+  position: relative;
+}
+.main .banner .heading__brand::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 120%;
+  height: 2px;
+  background-color: #900c50;
+}
+.main .banner .heading__logo-img {
+  width: 100%;
+}
+.main .banner .heading__name {
+  padding: 20px;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.main .banner .heading__subbrand {
+  padding: 5px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.main .banner__btn-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 80%;
 }
 .main .banner__btn {
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin-right: 10px;
   align-self: end;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: inherit;
-  color: #f0f0f0;
-  background-color: #900c50;
-  border: none;
+  color: #424242;
+  background-color: #fff;
+  border: 2px solid #900c50;
   cursor: pointer;
+  text-decoration: none;
   transition: 0.3s;
 }
 .main .banner__btn:hover {
-  background-color: #424242;
+  background-color: #900c50;
   color: #f0f0f0;
+}
+.main .banner__logo-box {
+  width: 40px;
+}
+.main .banner__logo {
+  width: 100%;
+}
+.main .banner__textbox {
+  margin-bottom: 20px;
 }
 .main .about-me {
   background-color: #f0f0f0;

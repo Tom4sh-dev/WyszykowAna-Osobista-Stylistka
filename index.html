@@ -33,22 +33,19 @@
 	</head>
 	<body class="page">
 		<header id="home" class="header">
-			<div class="heading header__heading">
-				<a href="#home" class="heading__brand"
-					><img class="heading__logo-img" src="./img/header.png" alt=""
-				/></a>
-				<h1 class="heading__subbrand">Twoja Osobista Stylistka</h1>
-				<h2 class="heading__name">Anastazja Zdanowicz</h2>
-			</div>
-
-			<button class="hamburger hamburger--elastic" type="button">
+            <button class="hamburger hamburger--elastic" type="button">
 				<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
 				</span>
 			</button>
 
+            <!-- MENU -->
+
 			<nav class="nav header__nav">
 				<ul class="nav__list nav__list--horizontal">
+					<li class="nav__item">
+						<a href="#home" class="nav__link">home</a>
+					</li>
 					<li class="nav__item">
 						<a href="#about-me" class="nav__link">o mnie</a>
 					</li>
@@ -71,14 +68,31 @@
 		<main class="main">
 			<div class="wrapper">
 				<section class="banner section">
-					<div class="banner__img-box img-box">
-						<img
-							class="banner__image"
-							src="./img/header 640.png"
-							alt="Anastazja, zdjęcie profilowe z ramami kolorystycznymi"
-						/>
-					</div>
-
+                    <div class="banner__img-box img-box">
+                        <img
+                            class="banner__image"
+                            src="./img/header 640.png"
+                            alt="Anastazja, zdjęcie profilowe z ramami kolorystycznymi"
+                        />
+                    </div>
+                    <div class="heading banner__heading">
+                        <h1 class="heading__brand"
+                            ><img class="heading__logo-img" src="./img/header.png" alt=""
+                        /></h1>
+                        <h2 class="heading__name">Anastazja Zdanowicz</h2>
+                        <h3 class="heading__subbrand">Twoja Osobista Stylistka</h3>
+                    </div>
+                    <div class="banner__btn-box">
+                        <a href="#contact" class="banner__btn">Kontakt</a>
+                            <div class="banner__logo-box">
+                                <img
+                                    class="banner__logo"
+                                    src="./img/logo rev.png"
+                                    alt="Logo"
+                                />
+                            </div>
+                            <a href="#offer" class="banner__btn">Oferta</a>
+                    </div>
 					<div class="banner__textbox textbox">
 						<p class="textbox__text">
 							Chciałabym Cię zaprosić do mojego świata kolorów i stylu. Pomogę
@@ -91,7 +105,7 @@
 							Twojego stylu życia i osobowości.
 						</p>
 					</div>
-					<button class="banner__btn">Kontakt</button>
+					
 				</section>
 			</div>
 
