@@ -55,7 +55,7 @@ html {
 		}
 		&__item {
 			position: relative;
-			margin: 30px;
+			margin: 20px;
 			width: 50%;
 			text-transform: uppercase;
 			&:hover {
@@ -133,7 +133,6 @@ html {
 				font-weight: 400;
 			}
 			&__subbrand {
-				padding: 5px;
 				font-size: 1.8rem;
 				font-weight: 400;
 			}
@@ -155,15 +154,15 @@ html {
 			letter-spacing: 2px;
 			font-size: 1.2rem;
 			font-family: inherit;
-			color: $dark-gray;
-			background-color: #fff;
+			color: #fff;
+			background-color: $raspberry;
 			border: 2px solid $raspberry;
 			cursor: pointer;
 			text-decoration: none;
 			transition: 0.3s;
 			&:hover {
-				background-color: $raspberry;
-				color: $light-gray;
+				background-color: #fff;
+				color: $dark-gray;
 			}
 		}
 
@@ -177,6 +176,7 @@ html {
 
 		&__textbox {
 			margin-bottom: 20px;
+			text-align: left;
 		}
 	}
 	// ABOUTME
@@ -352,15 +352,57 @@ html {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			text-align: center;
 			overflow: hidden;
 		}
 		&__prices-title {
+			padding: 10px;
+			margin-bottom: 40px;
+			width: 100%;
 			background-color: $raspberry;
 			color: $light-gray;
 		}
+
+		&__prices-box {
+			width: 80%;
+			text-align: left;
+		}
+
+		&__prices-list {
+		list-style: none;	
+		}
+
+		&__prices-btn {
+			padding: 5px;
+			font-family: inherit;
+			background: none;
+			border: none;
+			cursor: pointer;
+			transition: .3s;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+
+		&__prices-textbox {
+			margin: 10px 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.4s ease-in-out;
+		}
+		
+		&__prices-btn i.rotated {
+			transform: rotate(90deg);
+			transition: transform 0.3s ease-in-out;
+		}
+		
+		.fa-greater-than {
+			margin-right: 10px;
+		}
+
 		&__prices-logo {
 			position: absolute;
-			top: 0;
+			top: 40px;
 			left: 0;
 			z-index: -10;
 			opacity: 0.05;

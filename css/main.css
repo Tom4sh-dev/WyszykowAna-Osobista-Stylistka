@@ -208,7 +208,7 @@ html {
 }
 .header .nav__item {
   position: relative;
-  margin: 30px;
+  margin: 20px;
   width: 50%;
   text-transform: uppercase;
 }
@@ -277,7 +277,6 @@ html {
   font-weight: 400;
 }
 .main .banner .heading__subbrand {
-  padding: 5px;
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -296,16 +295,16 @@ html {
   letter-spacing: 2px;
   font-size: 1.2rem;
   font-family: inherit;
-  color: #424242;
-  background-color: #fff;
+  color: #fff;
+  background-color: #900c50;
   border: 2px solid #900c50;
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
 }
 .main .banner__btn:hover {
-  background-color: #900c50;
-  color: #f0f0f0;
+  background-color: #fff;
+  color: #424242;
 }
 .main .banner__logo-box {
   width: 40px;
@@ -315,6 +314,7 @@ html {
 }
 .main .banner__textbox {
   margin-bottom: 20px;
+  text-align: left;
 }
 .main .about-me {
   background-color: #f0f0f0;
@@ -465,15 +465,50 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   overflow: hidden;
 }
 .main .offer__prices-title {
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 100%;
   background-color: #900c50;
   color: #f0f0f0;
 }
+.main .offer__prices-box {
+  width: 80%;
+  text-align: left;
+}
+.main .offer__prices-list {
+  list-style: none;
+}
+.main .offer__prices-btn {
+  padding: 5px;
+  font-family: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main .offer__prices-btn:hover {
+  text-decoration: underline;
+}
+.main .offer__prices-textbox {
+  margin: 10px 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+.main .offer__prices-btn i.rotated {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+.main .offer .fa-greater-than {
+  margin-right: 10px;
+}
 .main .offer__prices-logo {
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 0;
   z-index: -10;
   opacity: 0.05;
