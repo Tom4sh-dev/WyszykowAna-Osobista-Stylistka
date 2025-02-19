@@ -474,7 +474,6 @@ html {
 		}
 
 		.more-reviews {
-			
 			&__link {
 				display: flex;
 				align-items: center;
@@ -487,8 +486,8 @@ html {
 				color: #fff;
 				border: 2px solid $raspberry;
 				background-color: $raspberry;
-				transition: .3s;
-				&:hover{
+				transition: 0.3s;
+				&:hover {
 					background-color: #fff;
 					color: $dark-gray;
 				}
@@ -500,4 +499,102 @@ html {
 			}
 		}
 	}
+
+	// CONTACT
+
+	.contact {
+		&__image {
+			width: 80%;
+		}
+		&__subtitle {
+			align-self: center;
+			margin-bottom: 10px;
+			font-size: 1.8rem;
+		}
+
+		&__email {
+			align-self: center;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		&__social-media {
+			display: flex;
+			align-self: center;
+			margin: 30px;
+		}
+
+		&__link {
+			display: block;
+			width: 60px;
+			padding: 5px;
+			margin: 0px 15px;
+			font-size: 3.8rem;
+			text-align: center;
+			color: $raspberry;
+			transition: 0.3s;
+			&:hover {
+				background-color: $raspberry;
+				color: #fff;
+			}
+		}
+
+		&__content-container {
+			display: flex;
+
+			align-items: center;
+			margin: 0px 0 40px;
+			padding: 0 10%;
+			width: 100%;
+		}
+
+		&__rules {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 20px;
+			width: 70%;
+		}
+		&__rule-link {
+			padding: 15px 10px;
+			margin: 10px;
+			width: 90%;
+			background-color: #fff;
+			color: $dark-gray;
+			border: 2px solid $raspberry;
+			transition: .3s;
+			&:hover{
+				background-color: $dark-gray;
+				color: #fff;
+				border-color: $dark-gray;
+			}
+		}
+
+		&__logo-box {
+			width: 30%;
+			height: auto;
+		}
+
+		&__logo {
+			width: 100%;
+		}
+	}
+
+	// FOOTER
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40px;
+		background-color: $raspberry;
+		&__copyright {
+			color: #fff;
+			font-size: 1.8rem;
+		}
+
+		&__year {
+			margin-right: 20px;
+		}
+	};
 }

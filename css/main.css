@@ -158,6 +158,12 @@
   text-align: center;
 }
 
+.link {
+  text-decoration: none;
+  color: #424242;
+  font-size: 1.8rem;
+}
+
 *,
 *::after,
 *::before {
@@ -591,4 +597,85 @@ html {
 .main .reviews .more-reviews__link .fa-brands {
   margin-right: 10px;
   font-size: 2rem;
+}
+.main .contact__image {
+  width: 80%;
+}
+.main .contact__subtitle {
+  align-self: center;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+.main .contact__email {
+  align-self: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.main .contact__social-media {
+  display: flex;
+  align-self: center;
+  margin: 30px;
+}
+.main .contact__link {
+  display: block;
+  width: 60px;
+  padding: 5px;
+  margin: 0px 15px;
+  font-size: 3.8rem;
+  text-align: center;
+  color: #900c50;
+  transition: 0.3s;
+}
+.main .contact__link:hover {
+  background-color: #900c50;
+  color: #fff;
+}
+.main .contact__content-container {
+  display: flex;
+  align-items: center;
+  margin: 0px 0 40px;
+  padding: 0 10%;
+  width: 100%;
+}
+.main .contact__rules {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  width: 70%;
+}
+.main .contact__rule-link {
+  padding: 15px 10px;
+  margin: 10px;
+  width: 90%;
+  background-color: #fff;
+  color: #424242;
+  border: 2px solid #900c50;
+  transition: 0.3s;
+}
+.main .contact__rule-link:hover {
+  background-color: #424242;
+  color: #fff;
+  border-color: #424242;
+}
+.main .contact__logo-box {
+  width: 30%;
+  height: auto;
+}
+.main .contact__logo {
+  width: 100%;
+}
+.main .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #900c50;
+}
+.main .footer__copyright {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.main .footer__year {
+  margin-right: 20px;
 }/*# sourceMappingURL=main.css.map */
