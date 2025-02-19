@@ -24,6 +24,9 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
+        <!-- Slick styles -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+               
 		<!-- AOS -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!-- Font Awsome -->
@@ -44,7 +47,7 @@
 			<nav class="nav header__nav">
 				<ul class="nav__list nav__list--horizontal">
 					<li class="nav__item">
-						<a href="#home" class="nav__link">home</a>
+						<a href="#home" class="nav__link">strona główna</a>
 					</li>
 					<li class="nav__item">
 						<a href="#about-me" class="nav__link">o mnie</a>
@@ -532,15 +535,24 @@
                     </div>
                 </div>
 				</section>
-
+</div>
 <!-- REVIEWS -->
 
-<div class="wrapper">
+
     <section id="reviews" class="reviews section">
-        <h2 class="section-heading">opinie</h2>
+        <div class="wrapper">
+        <h2 class="section-heading">Opinie</h2>
+
+        <div class="reviews__img-box img-box">
+            <img
+                class="reviews__image"
+                src="./img/reviews 640.jpg"
+                alt="Zdjęcie portretowe"
+            />
+        </div>
+
         <div class="reviews__textbox textbox">
             <div class="review-box">
-                <strong class="review-box__title">Amelia</strong>
                 <div class="review-box__info">
                     <div class="review-box__quote">
                         <i class="fas fa-quote-right"></i>
@@ -552,9 +564,9 @@
                         i instrukcje. Wszystko bardzo jasno wytłumaczone.
                     </p>
                 </div>
+                <strong class="review-box__name">Amelia</strong>
             </div>
             <div class="review-box">
-                <strong class="review-box__title">Katarzyna</strong>
                 <div class="review-box__info">
                     <div class="review-box__quote">
                         <i class="fas fa-quote-right"></i>
@@ -566,9 +578,10 @@
                         i styl.
                     </p>
                 </div>
+                <strong class="review-box__name">Katarzyna</strong>
             </div>
             <div class="review-box">
-                <strong class="review-box__title">Małgorzata</strong>
+               
                 <div class="review-box__info">
                     <div class="review-box__quote">
                         <i class="fas fa-quote-right"></i>
@@ -580,9 +593,10 @@
                         dostałam informacje, polecam.
                     </p>
                 </div>
+                <strong class="review-box__name">Małgorzata</strong>
             </div>
             <div class="review-box">
-                <strong class="review-box__title">Kasia</strong>
+                
                 <div class="review-box__info">
                     <div class="review-box__quote">
                         <i class="fas fa-quote-right"></i>
@@ -594,9 +608,10 @@
                         na właściwym miejscu.
                     </p>
                 </div>
+                <strong class="review-box__name">Kasia</strong>
             </div>
             <div class="review-box">
-                <strong class="review-box__title">Monika</strong>
+               
                 <div class="review-box__info">
                     <div class="review-box__quote">
                         <i class="fas fa-quote-right"></i>
@@ -608,9 +623,10 @@
                         zadowolona z efektów!
                     </p>
                 </div>
+                <strong class="review-box__name">Monika</strong>
             </div>
             <div class="review-box">
-                <strong class="review-box__title">Jaśmina</strong>
+                
                 <div class="review-box__info">
                     <div class="review-box__quote">
                         <i class="fas fa-quote-right"></i>
@@ -621,9 +637,10 @@
                         kolorystycznego. Polecam!
                     </p>
                 </div>
+                <strong class="review-box__name">Jaśmina</strong>
             </div>
             <div class="review-box">
-                <strong class="review-box__title">Kamila</strong>
+              
                 <div class="review-box__info">
                     <div class="review-box__quote">
                         <i class="fas fa-quote-right"></i>
@@ -635,6 +652,7 @@
                         zdjęciami.
                     </p>
                 </div>
+                <strong class="review-box__name">Kamila</strong>
             </div>
         </div>
         <div class="reviews__more more-reviews textbox">
@@ -645,10 +663,8 @@
                 class="more-reviews__link" 
                 href="https://www.facebook.com/WyszykowAna"
                 target="_blank"
-                ><i class="fa-brands fa-facebook"></i>WyszykowAna - Anastazja
-                Zdanowicz
-            </a>
-
+                ><i class="fa-brands fa-facebook"></i>WyszykowAna
+            </a
             <p class="more-reviews__text">
                 Zapraszam Cię również na Instagrama:
             </p>
@@ -659,23 +675,32 @@
                 ><i class="fa-brands fa-instagram"></i>wyszykow_ana
             </a>
         </div>
-
-        <div class="reviews__blocks blocks">
-            <div class="reviews__block reviews__block--block1"></div>
-            <div class="reviews__block reviews__block--block2"></div>
-            <div class="reviews__block reviews__block--block3"></div>
-            <div class="reviews__block reviews__block--block4"></div>
         </div>
     </section>
 
 
-			</div>
+			
 		</main>
 
 		<!-- Nav -->
 		<script src="./js/nav.js"></script>
 		<!-- Contact Form -->
 		<script src="./js/contactForm.js"></script>
+        <!-- Slick.js -->
+		<script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    
+    <script src="./js/slick.js"></script>        
 		<!-- Main -->
 		<script src="./js/main.js"></script>
 	</body>
