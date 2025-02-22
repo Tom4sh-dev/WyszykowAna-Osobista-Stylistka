@@ -417,11 +417,6 @@ html {
 	.reviews {
 		background-color: $light-gray;
 		transition: transform 0.5s;
-
-		&__image {
-			width: 60%;
-		}
-
 		&__textbox {
 			display: inline-block;
 			.review-box {
@@ -504,6 +499,9 @@ html {
 	// CONTACT
 
 	.contact {
+		&__image {
+			width: 80%;
+		}
 		&__subtitle {
 			align-self: center;
 			margin-bottom: 10px;

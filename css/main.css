@@ -526,9 +526,6 @@ html {
   background-color: #f0f0f0;
   transition: transform 0.5s;
 }
-.main .reviews__image {
-  width: 60%;
-}
 .main .reviews__textbox {
   display: inline-block;
 }
@@ -598,6 +595,9 @@ html {
 .main .reviews .more-reviews__link .fa-brands {
   margin-right: 10px;
   font-size: 2rem;
+}
+.main .contact__image {
+  width: 80%;
 }
 .main .contact__subtitle {
   align-self: center;
