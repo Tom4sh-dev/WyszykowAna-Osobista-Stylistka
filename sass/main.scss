@@ -154,6 +154,7 @@ html {
 			letter-spacing: 2px;
 			font-size: 1.2rem;
 			font-family: inherit;
+			font-weight: bold;
 			color: $dark-gray;
 			background-color: #fff;
 			border: 2px solid $raspberry;
@@ -503,9 +504,6 @@ html {
 	// CONTACT
 
 	.contact {
-		&__image {
-			width: 80%;
-		}
 		&__subtitle {
 			align-self: center;
 			margin-bottom: 10px;

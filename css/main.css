@@ -301,6 +301,7 @@ html {
   letter-spacing: 2px;
   font-size: 1.2rem;
   font-family: inherit;
+  font-weight: bold;
   color: #424242;
   background-color: #fff;
   border: 2px solid #900c50;
@@ -597,9 +598,6 @@ html {
 .main .reviews .more-reviews__link .fa-brands {
   margin-right: 10px;
   font-size: 2rem;
-}
-.main .contact__image {
-  width: 80%;
 }
 .main .contact__subtitle {
   align-self: center;
