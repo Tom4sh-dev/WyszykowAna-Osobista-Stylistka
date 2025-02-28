@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+	// MAIN
+
+	.main {
+		// BANNER
+
+		.banner {
+			&__img-box {
+                display: flex;
+                justify-content: center;
+            }
+			&__image {
+				width: 80%;
+			}
+            .heading {
+                width: 70%;
+                &__name {
+                    font-size: 2.6rem;
+                }
+
+                &__subbrand {
+                    font-size: 2.0rem;
+                }
+            }
+
+            &__btn-box {
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+
+            &__btn {
+                padding: 10px 15px;
+                font-size: 1.6rem;
+            }
+		}
+	}
+}

@@ -93,7 +93,6 @@ html {
 
 	.banner {
 		margin-bottom: 40px;
-
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -154,7 +153,6 @@ html {
 			letter-spacing: 2px;
 			font-size: 1.2rem;
 			font-family: inherit;
-			font-weight: bold;
 			color: $dark-gray;
 			background-color: #fff;
 			border: 2px solid $raspberry;
@@ -327,6 +325,7 @@ html {
 			border: none;
 			cursor: pointer;
 			transition: 0.3s;
+			z-index: 10;
 			&:hover {
 				background-color: $light-gray;
 				color: $raspberry;
@@ -500,11 +499,13 @@ html {
 
 	.contact {
 		&__image {
-			width: 80%;
+			width: 50%;
 		}
 		&__subtitle {
-			align-self: center;
-			margin-bottom: 10px;
+			margin-bottom: 30px;
+			padding: 0 10%;
+			text-align: center;
+			width: 100%;
 			font-size: 1.8rem;
 		}
 
@@ -512,6 +513,7 @@ html {
 			align-self: center;
 			margin-bottom: 5px;
 			font-weight: bold;
+			font-size: 1.4rem;
 		}
 
 		&__social-media {
@@ -537,7 +539,6 @@ html {
 
 		&__content-container {
 			display: flex;
-
 			align-items: center;
 			margin: 0px 0 40px;
 			padding: 0 10%;
@@ -557,9 +558,12 @@ html {
 			width: 90%;
 			background-color: #fff;
 			color: $dark-gray;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			letter-spacing: 2px;
 			border: 2px solid $raspberry;
-			transition: .3s;
-			&:hover{
+			transition: 0.3s;
+			&:hover {
 				background-color: $dark-gray;
 				color: #fff;
 				border-color: $dark-gray;
@@ -586,11 +590,15 @@ html {
 		background-color: $raspberry;
 		&__copyright {
 			color: #fff;
-			font-size: 1.8rem;
+			font-size: 1.2rem;
 		}
 
 		&__year {
 			margin-right: 20px;
 		}
-	};
+	}
 }
+
+@import './small';
+@import './medium';
+@import './large';

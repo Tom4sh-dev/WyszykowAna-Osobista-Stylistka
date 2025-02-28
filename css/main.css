@@ -158,6 +158,10 @@
   text-align: center;
 }
 
+.img {
+  max-width: 400px;
+}
+
 .link {
   text-decoration: none;
   color: #424242;
@@ -301,7 +305,6 @@ html {
   letter-spacing: 2px;
   font-size: 1.2rem;
   font-family: inherit;
-  font-weight: bold;
   color: #424242;
   background-color: #fff;
   border: 2px solid #900c50;
@@ -451,6 +454,7 @@ html {
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  z-index: 10;
 }
 .main .offer__btn-close:hover {
   background-color: #f0f0f0;
@@ -597,17 +601,20 @@ html {
   font-size: 2rem;
 }
 .main .contact__image {
-  width: 80%;
+  width: 50%;
 }
 .main .contact__subtitle {
-  align-self: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  padding: 0 10%;
+  text-align: center;
+  width: 100%;
   font-size: 1.8rem;
 }
 .main .contact__email {
   align-self: center;
   margin-bottom: 5px;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 .main .contact__social-media {
   display: flex;
@@ -648,6 +655,9 @@ html {
   width: 90%;
   background-color: #fff;
   color: #424242;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   border: 2px solid #900c50;
   transition: 0.3s;
 }
@@ -672,8 +682,142 @@ html {
 }
 .main .footer__copyright {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 .main .footer__year {
   margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .main .banner__img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .main .banner__image {
+    width: 80%;
+  }
+  .main .banner .heading {
+    width: 70%;
+  }
+  .main .banner .heading__name {
+    font-size: 2.6rem;
+  }
+  .main .banner .heading__subbrand {
+    font-size: 2rem;
+  }
+  .main .banner__btn-box {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .main .banner__btn {
+    padding: 10px 15px;
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .header .hamburger {
+    display: none;
+  }
+  .header .nav {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    z-index: 100;
+  }
+  .header .nav__list {
+    position: relative;
+    flex-direction: row;
+    background-color: transparent;
+    transform: translateX(0);
+  }
+  .header .nav__item {
+    position: relative;
+    margin: 5px;
+    width: auto;
+    border: 2px solid transparent;
+    background-color: #424242;
+    transition: 0.3s;
+  }
+  .header .nav__item:hover {
+    background-color: white;
+    color: #424242;
+    border: 2px solid #900c50;
+  }
+  .header .nav__item::after {
+    content: none;
+  }
+  .header .nav__item:first-of-type {
+    background-color: #900c50;
+  }
+  .header .nav__item:first-of-type:hover {
+    background-color: white;
+    color: #424242;
+    border: 2px solid #900c50;
+  }
+  .header .nav__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .header .nav__link:hover {
+    color: #424242;
+  }
+  .main .banner {
+    display: grid;
+    gap: 10px;
+    padding-bottom: 40px;
+  }
+  .main .banner__img-box {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+  }
+  .main .banner__image {
+    width: 80%;
+  }
+  .main .banner .heading {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 20px 5% 0px;
+    text-align: left;
+  }
+  .main .banner .heading__brand::after {
+    left: 0;
+    width: 370%;
+    height: 2px;
+    background-color: #900c50;
+  }
+  .main .banner .heading__name {
+    padding: 10px 0;
+    font-size: 2rem;
+  }
+  .main .banner .heading__subbrand {
+    font-size: 1.8rem;
+  }
+  .main .banner__textbox {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .main .banner__btn-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-bottom: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
