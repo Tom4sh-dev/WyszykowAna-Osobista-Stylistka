@@ -65,24 +65,12 @@
 				position: relative;
 				margin: 5px;
 				width: auto;
-				border: 2px solid transparent;
 				background-color: $dark-gray;
-				transition: 0.3s;
-				&:hover {
-					background-color: white;
-					color: $dark-gray;
-					border: 2px solid $raspberry;
-				}
 				&::after {
 					content: none;
 				}
 				&:first-of-type {
 					background-color: $raspberry;
-					&:hover {
-						background-color: white;
-						color: $dark-gray;
-						border: 2px solid $raspberry;
-					}
 				}
 			}
 			&__link {
@@ -92,9 +80,14 @@
 				padding: 5px 10px;
 				font-size: 1.2rem;
 				color: white;
+                border: 2px solid transparent;
 				letter-spacing: 2px;
+                cursor: pointer;
+                transition: .3s;
 				&:hover {
 					color: $dark-gray;
+                    background-color: white;
+                    border: 2px solid $raspberry;
 				}
 			}
 		}
@@ -170,6 +163,7 @@
 			}
 			&__btn {
 				width: 30%;
+                cursor: pointer;
 			}
 		}
 

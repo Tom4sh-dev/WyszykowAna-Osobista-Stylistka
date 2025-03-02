@@ -795,25 +795,13 @@ html {
     position: relative;
     margin: 5px;
     width: auto;
-    border: 2px solid transparent;
     background-color: #424242;
-    transition: 0.3s;
-  }
-  .header .nav__item:hover {
-    background-color: white;
-    color: #424242;
-    border: 2px solid #900c50;
   }
   .header .nav__item::after {
     content: none;
   }
   .header .nav__item:first-of-type {
     background-color: #900c50;
-  }
-  .header .nav__item:first-of-type:hover {
-    background-color: white;
-    color: #424242;
-    border: 2px solid #900c50;
   }
   .header .nav__link {
     display: block;
@@ -822,10 +810,15 @@ html {
     padding: 5px 10px;
     font-size: 1.2rem;
     color: white;
+    border: 2px solid transparent;
     letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
   }
   .header .nav__link:hover {
     color: #424242;
+    background-color: white;
+    border: 2px solid #900c50;
   }
   .main .banner {
     display: grid;
@@ -886,6 +879,7 @@ html {
   }
   .main .banner__btn {
     width: 30%;
+    cursor: pointer;
   }
   .main .about-me__content {
     display: grid;
