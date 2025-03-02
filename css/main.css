@@ -167,6 +167,10 @@
   font-size: 1.8rem;
 }
 
+.fa-google {
+  scale: 0.9;
+}
+
 *,
 *::after,
 *::before {
@@ -1033,14 +1037,26 @@ html {
   .main .reviews .more-reviews__text2 {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 3;
   }
   .main .reviews .more-reviews__link2 {
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 3;
+  }
+  .main .reviews .more-reviews__text3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .main .reviews .more-reviews__link3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   .main .contact__grid-container {
     display: grid;
