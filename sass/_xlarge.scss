@@ -1,0 +1,25 @@
+@media (min-height: 801px) {
+	.banner {
+		min-height: 800px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-heading {
+		margin: 30px 0 40px;
+	}
+	.textbox {
+		padding: 0 5%;
+	}
+    .main {
+        .header {
+            padding: 0;
+        }
+        .banner {
+            padding: 40px 0;
+            &__img-box {
+                width: 700px;
+            }
+        }
+    }
+}

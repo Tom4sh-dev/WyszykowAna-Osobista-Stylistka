@@ -8,7 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		btnOpen.addEventListener('click', () => {
 			offerMore.classList.add('offer__more--active');
-			item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+			if (window.innerWidth <= 992) {
+				// Code to execute when the screen width is 992px or smaller
+				item.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			  } 
+
+
+			
 		});
 
 		btnClose.addEventListener('click', () => {
