@@ -12,6 +12,7 @@
 
 html {
 	font-size: 10px;
+	line-height: 20px;
 	scroll-behavior: smooth;
 	color: $dark-gray;
 }
@@ -152,16 +153,15 @@ html {
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			font-size: 1.2rem;
-			font-family: inherit;
-			color: $dark-gray;
-			background-color: #fff;
+			color: #fff;
+			background-color: $raspberry;
 			border: 2px solid $raspberry;
 			cursor: pointer;
 			text-decoration: none;
 			transition: 0.3s;
 			&:hover {
-				background-color: $raspberry;
-				color: #fff;
+				background-color: #fff;
+				color: $dark-gray;
 			}
 		}
 
@@ -193,6 +193,7 @@ html {
 		&__item {
 			position: relative;
 			margin-bottom: 80px;
+			text-align: center;
 			&::after {
 				content: '';
 				position: absolute;
@@ -210,17 +211,29 @@ html {
 		}
 
 		&__title {
-			background-color: $light-gray;
-			padding: 5px;
+			position: absolute;
+			width: 100%;
+			line-height: 40px;
 			text-transform: uppercase;
 			font-size: 2rem;
 			font-weight: 400;
+		}
+
+		&__bgc {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 40px;
+
+			background-color: $light-gray;
+			z-index: -1;
 		}
 		&__btn {
 			position: absolute;
 			bottom: -40px;
 			left: 0;
-			padding: 10px 15px;
+			width: 40px;
+			height: 40px;
 			color: #fff;
 			background-color: $raspberry;
 			border: none;
@@ -234,7 +247,7 @@ html {
 		}
 
 		&__subtitle {
-			padding: 25px;
+			padding: 60px 25px 25px;
 			font-size: 1.8rem;
 		}
 
@@ -246,6 +259,7 @@ html {
 		}
 
 		&__textbox {
+			text-align: left;
 			margin: 0;
 			padding: 40px 5%;
 			background-color: $light-gray;
@@ -361,6 +375,10 @@ html {
 			width: 100%;
 			background-color: $raspberry;
 			color: #fff;
+			line-height: 40px;
+			text-transform: uppercase;
+			font-size: 2rem;
+			font-weight: 400;
 		}
 
 		&__prices-box {
@@ -476,7 +494,6 @@ html {
 				padding: 10px;
 				text-decoration: none;
 				letter-spacing: 4px;
-				// font-weight: bold;
 				font-size: 1.4rem;
 				color: #fff;
 				border: 2px solid $raspberry;
@@ -500,6 +517,9 @@ html {
 	.contact {
 		&__image {
 			width: 50%;
+		}
+		&__text-container {
+			text-align: center;
 		}
 		&__subtitle {
 			margin-bottom: 30px;
@@ -553,20 +573,20 @@ html {
 			width: 70%;
 		}
 		&__rule-link {
-			padding: 15px 10px;
 			margin: 10px;
+			padding: 10px 10px;
 			width: 90%;
-			background-color: #fff;
-			color: $dark-gray;
+			background-color: $raspberry;
+			color: #fff;
 			font-size: 1.2em;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			border: 2px solid $raspberry;
 			transition: 0.3s;
 			&:hover {
-				background-color: $dark-gray;
-				color: #fff;
-				border-color: $dark-gray;
+				background-color: #fff;
+				color: $dark-gray;
+				border-color: $raspberry;
 			}
 		}
 

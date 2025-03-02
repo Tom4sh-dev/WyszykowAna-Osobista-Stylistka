@@ -23,7 +23,15 @@ $('.reviews__textbox').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+      }
+  }],
   });
 
 document.querySelector(".slick-prev").innerHTML = '<i class="fa-sharp fa-solid fa-angle-left"></i><i class="fa-sharp fa-solid fa-angle-left"></i>';
