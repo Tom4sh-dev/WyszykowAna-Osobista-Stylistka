@@ -606,6 +606,7 @@ html {
 .main .reviews .more-reviews__link {
   display: flex;
   align-items: center;
+  text-align: center;
   margin: 15px 0;
   padding: 10px;
   text-decoration: none;
@@ -739,7 +740,7 @@ html {
 }
 @media (max-height: 800px) {
   .banner {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
   }
 }
 @media (min-width: 992px) {

@@ -1,6 +1,6 @@
 @media (max-height:  800px) {
 .banner {
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
 }
 
 }
