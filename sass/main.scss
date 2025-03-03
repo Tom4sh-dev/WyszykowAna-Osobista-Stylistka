@@ -88,6 +88,21 @@ html {
 				color: $white;
 			}
 		}
+
+		&__social-media{
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+		};
+
+		&__media-link {
+			margin: 10px;
+			padding: 10px;
+			color: $raspberry;
+		};
 	}
 }
 
@@ -493,28 +508,29 @@ html {
 		}
 
 		.more-reviews {
-			&__link {
+			&__link-container{
 				display: flex;
-				align-items: center;
+				margin: 0 30%;
+			}
+	
+			&__link {
+				display: block;
+				width: 60px;
+				margin: 20px 15px;
 				text-align: center;
-				margin: 15px 0;
-				padding: 10px;
-				text-decoration: none;
-				letter-spacing: 4px;
-				font-size: 1.4rem;
-				color: #fff;
-				border: 2px solid $raspberry;
-				background-color: $raspberry;
+				color: $raspberry;
 				transition: 0.3s;
 				&:hover {
-					background-color: #fff;
-					color: $dark-gray;
+					scale: 1.1;
 				}
+				
 
 				.fa-brands {
-					margin-right: 10px;
-					font-size: 2rem;
+					font-size: 3rem;
 				}
+			}
+			:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -543,26 +559,7 @@ html {
 			font-size: 1.4rem;
 		}
 
-		&__social-media {
-			display: flex;
-			justify-content: center;
-			margin: 30px;
-		}
-
-		&__link {
-			display: block;
-			width: 60px;
-			padding: 5px;
-			margin: 0px 15px;
-			font-size: 3.8rem;
-			text-align: center;
-			color: $raspberry;
-			transition: 0.3s;
-			&:hover {
-				background-color: $raspberry;
-				color: #fff;
-			}
-		}
+	
 
 		&__content-container {
 			display: flex;

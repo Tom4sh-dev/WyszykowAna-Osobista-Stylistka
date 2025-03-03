@@ -253,6 +253,19 @@ html {
 .header .nav__link:hover {
   color: #fff;
 }
+.header .nav__social-media {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .nav__media-link {
+  margin: 10px;
+  padding: 10px;
+  color: #900c50;
+}
 
 .main .banner {
   margin-bottom: 40px;
@@ -603,27 +616,26 @@ html {
 .main .reviews .slick-next {
   right: 15%;
 }
-.main .reviews .more-reviews__link {
+.main .reviews .more-reviews__link-container {
   display: flex;
-  align-items: center;
+  margin: 0 30%;
+}
+.main .reviews .more-reviews__link {
+  display: block;
+  width: 60px;
+  margin: 20px 15px;
   text-align: center;
-  margin: 15px 0;
-  padding: 10px;
-  text-decoration: none;
-  letter-spacing: 4px;
-  font-size: 1.4rem;
-  color: #fff;
-  border: 2px solid #900c50;
-  background-color: #900c50;
+  color: #900c50;
   transition: 0.3s;
 }
 .main .reviews .more-reviews__link:hover {
-  background-color: #fff;
-  color: #424242;
+  scale: 1.1;
 }
 .main .reviews .more-reviews__link .fa-brands {
-  margin-right: 10px;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+.main .reviews .more-reviews :last-child {
+  margin-bottom: 0;
 }
 .main .contact__image {
   width: 50%;
@@ -643,25 +655,6 @@ html {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 1.4rem;
-}
-.main .contact__social-media {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
-}
-.main .contact__link {
-  display: block;
-  width: 60px;
-  padding: 5px;
-  margin: 0px 15px;
-  font-size: 3.8rem;
-  text-align: center;
-  color: #900c50;
-  transition: 0.3s;
-}
-.main .contact__link:hover {
-  background-color: #900c50;
-  color: #fff;
 }
 .main .contact__content-container {
   display: flex;
@@ -820,6 +813,18 @@ html {
     background-color: white;
     border: 2px solid #900c50;
   }
+  .header .nav__social-media {
+    flex-direction: row;
+    left: 0;
+  }
+  .header .nav__media-link {
+    margin: 5px;
+    padding: 5px;
+    transition: 0.3s;
+  }
+  .header .nav__media-link:hover {
+    scale: 1.2;
+  }
   .main .banner {
     display: grid;
     gap: 10px;
@@ -847,9 +852,10 @@ html {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    width: 100%;
+    width: 110%;
+    padding: 10px 20px;
     text-align: left;
-    padding: 0 20px;
+    background-color: #f9f9f9;
   }
   .main .banner .heading__brand {
     display: none;
@@ -857,6 +863,7 @@ html {
   .main .banner .heading__name {
     padding: 0 0 10px;
     font-size: 2rem;
+    font-weight: 500;
   }
   .main .banner .heading__subbrand {
     font-size: 1.8rem;
@@ -1011,48 +1018,6 @@ html {
   .main .reviews .review-box {
     margin: 60px 50px 10px;
   }
-  .main .reviews .more-reviews {
-    display: grid;
-    flex-direction: row;
-    padding: 0 200px;
-  }
-  .main .reviews .more-reviews__text {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    font-weight: bold;
-  }
-  .main .reviews .more-reviews__link {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .main .reviews .more-reviews__text2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .main .reviews .more-reviews__link2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .main .reviews .more-reviews__text3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-  .main .reviews .more-reviews__link3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
   .main .contact__grid-container {
     display: grid;
   }
@@ -1071,6 +1036,10 @@ html {
     grid-row-start: 1;
     grid-row-end: 2;
   }
+  .main .contact__content-container {
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
 }
 @media (min-height: 801px) {
   .banner {
@@ -1084,11 +1053,11 @@ html {
   .textbox {
     padding: 0 5%;
   }
-  .main .header {
-    padding: 0;
+  .header .nav__social-media {
+    left: 10%;
   }
   .main .banner {
-    padding: 40px 0;
+    padding: 0 0 40px;
   }
   .main .banner__img-box {
     width: 700px;
