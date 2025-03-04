@@ -259,6 +259,8 @@ html {
   position: absolute;
   right: 20px;
   top: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
   transform: translateY(-50%);
 }
 .header .nav__media-link {
