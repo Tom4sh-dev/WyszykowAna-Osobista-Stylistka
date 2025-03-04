@@ -229,9 +229,6 @@ html {
   width: 50%;
   text-transform: uppercase;
 }
-.header .nav__item:hover {
-  background-color: #900c50;
-}
 .header .nav__item::after {
   content: "";
   position: absolute;
@@ -249,9 +246,10 @@ html {
   font-size: 1.8rem;
   color: #424242;
   text-decoration: none;
+  transition: 0.3s;
 }
 .header .nav__link:hover {
-  color: #fff;
+  margin-left: 30px;
 }
 .header .nav__social-media {
   display: flex;
@@ -277,7 +275,7 @@ html {
   text-align: center;
 }
 .main .banner__img-box {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   margin-bottom: 0;
 }
 .main .banner__image {
@@ -321,34 +319,21 @@ html {
 }
 .main .banner__btn {
   padding: 10px 10px;
-  margin-right: 10px;
-  align-self: end;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.2rem;
   color: #fff;
-  background-color: #900c50;
-  border: 2px solid #900c50;
+  background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
-}
-.main .banner__btn:hover {
-  background-color: #fff;
-  color: #424242;
-}
-.main .banner__logo-box {
-  width: 40px;
-}
-.main .banner__logo {
-  width: 100%;
 }
 .main .banner__textbox {
   margin-bottom: 20px;
   text-align: left;
 }
 .main .about-me {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
 }
 .main .about-me__image {
   width: 80%;
@@ -384,25 +369,19 @@ html {
   top: 0;
   width: 100%;
   height: 40px;
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   z-index: -1;
 }
 .main .offer__btn {
   position: absolute;
-  bottom: -40px;
   left: 0;
   width: 40px;
   height: 40px;
   color: #fff;
-  background-color: #900c50;
+  background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
   border: none;
   cursor: pointer;
   transition: 0.3s;
-}
-.main .offer__btn:hover {
-  background-color: #fff;
-  color: #900c50;
-  padding: 10px 20px;
 }
 .main .offer__subtitle {
   padding: 60px 25px 25px;
@@ -418,7 +397,7 @@ html {
   text-align: left;
   margin: 0;
   padding: 40px 5%;
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
 }
 .main .offer__list-title {
   align-self: start;
@@ -436,7 +415,7 @@ html {
   display: flex;
   flex-direction: column;
   z-index: 10;
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   overflow: hidden;
   transition: transform 1s;
   transform: translateX(-150%);
@@ -484,16 +463,11 @@ html {
   width: 40px;
   height: 40px;
   color: #fff;
-  background-color: #900c50;
+  background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
   border: none;
   cursor: pointer;
   transition: 0.3s;
   z-index: 10;
-}
-.main .offer__btn-close:hover {
-  background-color: #f9f9f9;
-  color: #900c50;
-  padding: 10px 20px;
 }
 .main .offer__more-img {
   margin-top: 30px;
@@ -517,7 +491,7 @@ html {
   padding: 10px;
   margin-bottom: 40px;
   width: 100%;
-  background-color: #900c50;
+  background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
   color: #fff;
   line-height: 40px;
   text-transform: uppercase;
@@ -558,15 +532,18 @@ html {
   margin-right: 10px;
   transition: transform 0.3s ease-in-out;
 }
-.main .offer__prices-logo {
+.main .offer__logo-box {
   position: absolute;
-  top: 40px;
-  left: 0;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -10;
+}
+.main .offer__prices-logo {
   opacity: 0.05;
 }
 .main .reviews {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   transition: transform 0.5s;
 }
 .main .reviews__textbox {
@@ -602,15 +579,11 @@ html {
   top: 0;
   padding: 10px;
   color: #fff;
-  background-color: #900c50;
+  background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
   border: none;
   cursor: pointer;
   transition: 0.3s;
   z-index: 10;
-}
-.main .reviews .slick-arrow:hover {
-  background-color: #fff;
-  color: #900c50;
 }
 .main .reviews .slick-prev {
   left: 15%;
@@ -668,26 +641,21 @@ html {
 .main .contact__rules {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   padding: 20px;
-  width: 70%;
+  width: 60%;
 }
 .main .contact__rule-link {
   margin: 10px;
-  padding: 10px 10px;
-  width: 90%;
-  background-color: #900c50;
-  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 1.2em;
-  text-transform: uppercase;
+  font-style: italic;
   letter-spacing: 2px;
-  border: 2px solid #900c50;
   transition: 0.3s;
 }
 .main .contact__rule-link:hover {
-  background-color: #fff;
-  color: #424242;
-  border-color: #900c50;
+  color: #900c50;
 }
 .main .contact__logo-box {
   width: 30%;
@@ -701,7 +669,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 40px;
-  background-color: #900c50;
+  background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
 }
 .main .footer__copyright {
   color: #fff;
@@ -731,6 +699,18 @@ html {
   .main .banner__btn-box {
     margin-top: 30px;
     margin-bottom: 50px;
+  }
+  .main .banner__btn:hover {
+    scale: 1.05;
+  }
+  .main .offer__btn:hover {
+    padding-left: 10px;
+  }
+  .main .offer__btn-close:hover {
+    padding-right: 10px;
+  }
+  .main .reviews .slick-arrow:hover {
+    scale: 1.05;
   }
 }
 @media (max-height: 800px) {
@@ -790,13 +770,13 @@ html {
     position: relative;
     margin: 5px;
     width: auto;
-    background-color: #424242;
+    background-image: linear-gradient(220deg, #9d9d9d 0%, #646464 90%);
   }
   .header .nav__item::after {
     content: none;
   }
   .header .nav__item:first-of-type {
-    background-color: #900c50;
+    background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
   }
   .header .nav__link {
     display: block;
@@ -805,7 +785,6 @@ html {
     padding: 5px 10px;
     font-size: 1.2rem;
     color: white;
-    border: 2px solid transparent;
     letter-spacing: 2px;
     cursor: pointer;
     transition: 0.3s;
@@ -813,7 +792,7 @@ html {
   .header .nav__link:hover {
     color: #424242;
     background-color: white;
-    border: 2px solid #900c50;
+    margin-left: 0;
   }
   .header .nav__social-media {
     flex-direction: row;
@@ -857,7 +836,7 @@ html {
     width: 110%;
     padding: 10px 20px;
     text-align: left;
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
   }
   .main .banner .heading__brand {
     display: none;
@@ -888,7 +867,6 @@ html {
   }
   .main .banner__btn {
     width: 30%;
-    cursor: pointer;
   }
   .main .about-me__content {
     display: grid;
@@ -1011,11 +989,6 @@ html {
   .main .offer__prices-box {
     padding-bottom: 40px;
     padding: 0 0 40px 80px;
-  }
-  .main .offer__prices-logo {
-    top: -40%;
-    left: 20%;
-    scale: 0.5;
   }
   .main .reviews .review-box {
     margin: 60px 50px 10px;

@@ -57,12 +57,12 @@
 				position: relative;
 				margin: 5px;
 				width: auto;
-				background-color: $dark-gray;
+                background-image: $grey-gradient;
 				&::after {
 					content: none;
 				}
 				&:first-of-type {
-					background-color: $raspberry;
+					background-image: $ras-gradient;
 				}
 			}
 			&__link {
@@ -72,14 +72,13 @@
 				padding: 5px 10px;
 				font-size: 1.2rem;
 				color: white;
-				border: 2px solid transparent;
 				letter-spacing: 2px;
 				cursor: pointer;
 				transition: 0.3s;
 				&:hover {
 					color: $dark-gray;
 					background-color: white;
-					border: 2px solid $raspberry;
+                    margin-left: 0;
 				}
 			}
 			&__social-media {
@@ -169,7 +168,6 @@
 			}
 			&__btn {
 				width: 30%;
-				cursor: pointer;
 			}
 		}
 
@@ -312,11 +310,7 @@
 				padding-bottom: 40px;
 				padding: 0 0 40px 80px;
 			}
-			&__prices-logo {
-				top: -40%;
-				left: 20%;
-				scale: 0.5;
-			}
+			
 		}
 
 		// REVIEWS
