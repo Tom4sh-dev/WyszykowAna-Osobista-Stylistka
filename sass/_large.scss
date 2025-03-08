@@ -13,7 +13,6 @@
 		height: 50px;
 		display: flex;
 		justify-content: center;
-		margin-top: 20px;
 		padding: 0 40px;
 
 		.hamburger {
@@ -21,12 +20,14 @@
 		}
 
 		.nav {
-			position: relative;
+			position: fixed;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			max-width: 1200px;
 			height: fit-content;
+			padding-top: 20px;
+			background-color: #fff;
 			z-index: 100;
 			&::after {
 				content: '';
@@ -57,7 +58,6 @@
 				position: relative;
 				margin: 5px;
 				width: auto;
-                background-image: $grey-gradient;
 				&::after {
 					content: none;
 				}
@@ -71,13 +71,18 @@
 				height: 100%;
 				padding: 5px 10px;
 				font-size: 1.2rem;
-				color: white;
+				color: $dark-gray;
 				letter-spacing: 2px;
+				border: 1px solid transparent;
 				cursor: pointer;
 				transition: 0.3s;
+				&--first{
+					color: #fff;
+				}
 				&:hover {
 					color: $dark-gray;
-					background-color: white;
+					background-color: #fff;
+					border: 1px solid $raspberry;
                     margin-left: 0;
 				}
 			}
@@ -131,8 +136,6 @@
 				width: 110%;
 				padding: 10px 20px;
 				text-align: left;
-
-				background-color: $light-gray;
 
 				&__brand {
 					display: none;
@@ -241,7 +244,6 @@
 			&__item {
 				display: grid;
 				gap: 40px;
-				min-height: 600px;
 				overflow: hidden;
 			}
 
@@ -263,15 +265,9 @@
 				grid-column-end: 3;
 			}
 			&__textbox {
-				grid-column-start: 2;
-				grid-column-end: 3;
-				grid-row-start: 2;
-				grid-row-end: 3;
+				padding-bottom: 40px;
 			}
-			&__textbox2 {
-				grid-column-start: 1;
-				grid-column-end: 2;
-			}
+		
 
 			&__subtitle {
 				padding: 0px 25px 30%;
@@ -279,6 +275,7 @@
 			&__subtitle2 {
 				padding-bottom: 15%;
 			}
+
 			&__img-box {
 				margin-bottom: 0;
 			}
@@ -289,10 +286,28 @@
 				width: 80%;
 			}
 			&__more {
+				bottom: 0;
 				transform: translatey(-150%);
 				&--active {
 					transform: translatey(0);
 				}
+				
+			}
+
+			&__more-img {
+				margin: 20px 0;
+			}
+
+			&__more-textbox{
+				.textbox__text {
+					text-align: left;
+				};
+			}
+			&__more-container{
+				display: flex;
+				align-items: center;
+				margin-top: 40px;
+
 			}
 
 			&__more-logo {
