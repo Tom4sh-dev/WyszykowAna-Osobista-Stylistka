@@ -410,6 +410,7 @@ html {
 .main .offer__more {
   position: absolute;
   top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
   display: flex;
@@ -422,7 +423,6 @@ html {
 }
 .main .offer__more--active {
   transform: translatex(0);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .main .offer__more-textbox {
   text-align: left;
@@ -973,7 +973,6 @@ html {
     width: 80%;
   }
   .main .offer__more {
-    bottom: 0;
     transform: translatey(-150%);
   }
   .main .offer__more--active {

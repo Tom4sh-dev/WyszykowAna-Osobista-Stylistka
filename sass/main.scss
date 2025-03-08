@@ -275,7 +275,7 @@ html {
 		&__more {
 			position: absolute;
 			top: 0;
-			
+			bottom: 0;
 			right: 0;
 			left: 0;
 			display: flex;
@@ -287,7 +287,6 @@ html {
 			transform: translateX(-150%);
 			&--active {
 				transform: translatex(0);
-				box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 			}
 		}
 
