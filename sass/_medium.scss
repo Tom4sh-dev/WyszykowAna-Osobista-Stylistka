@@ -28,11 +28,14 @@
 				margin-bottom: 50px;
 			}
 
-            &__btn {
-                &:hover {
-                    scale: 1.05;
-                }
-            }
+			&__btn {
+				color: $dark-gray;
+				background-image: none;
+				border: 1px solid $raspberry;
+				&:hover {
+					border: 1px solid transparent;
+				}
+			}
 		}
 
 		// OFFER
@@ -49,15 +52,14 @@
 			}
 		}
 
-        // REVIEWS
+		// REVIEWS
 
-        .reviews {
-
-            .slick-arrow {
-                &:hover {
-                    scale: 1.05;
-                }
-            }
-        }
+		.reviews {
+			.slick-arrow {
+				&:hover {
+					scale: 1.05;
+				}
+			}
+		}
 	}
 }

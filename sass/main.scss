@@ -162,6 +162,7 @@ html {
 			align-items: center;
 			margin-bottom: 40px;
 			width: 80%;
+			
 		}
 
 		&__btn {
@@ -169,11 +170,13 @@ html {
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			font-size: 1.2rem;
+			
 			color: #fff;
 			background-image: $ras-gradient;
 			cursor: pointer;
 			text-decoration: none;
 			transition: 0.3s;
+			
 		}
 
 		&__textbox {
