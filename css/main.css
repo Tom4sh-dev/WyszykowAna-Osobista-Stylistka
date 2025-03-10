@@ -482,6 +482,19 @@ html {
   opacity: 0.05;
   scale: 2;
 }
+.main .offer__picture-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.main .offer__img-box-extra {
+  width: 45%;
+  max-width: 250px;
+  margin: 20px 2%;
+  border: 1px solid #424242;
+}
 .main .offer__prices {
   position: relative;
   display: flex;
@@ -729,6 +742,9 @@ html {
   }
 }
 @media (min-width: 992px) {
+  html {
+    scroll-padding-top: 76.2px;
+  }
   .header {
     position: relative;
     width: 100%;
@@ -999,6 +1015,21 @@ html {
   }
   .main .offer__btn-close {
     transform: rotate(90deg);
+  }
+  .main .offer__picture-container {
+    position: relative;
+  }
+  .main .offer__picture-container::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    top: -40px;
+    height: 1px;
+    width: 90%;
+    background-color: #424242;
+  }
+  .main .offer__img-box-extra {
+    margin: 20px 5%;
   }
   .main .offer__prices-box {
     width: 100%;

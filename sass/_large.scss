@@ -7,6 +7,10 @@
 @media (min-width: 992px) {
 	// HEADER
 
+	html {
+		scroll-padding-top: 76.2px;
+	}
+
 	.header {
 		position: relative;
 		width: 100%;
@@ -316,6 +320,25 @@
 			&__btn-close {
 				transform: rotate(90deg);
 			}
+
+
+			&__picture-container {
+				position: relative;
+				&::after {
+					content: '';
+					position: absolute;
+					left: 5%;
+					top: -40px;
+					height: 1px;
+					width: 90%;
+					background-color: $dark-gray;
+				}
+			}
+
+			&__img-box-extra {
+				margin: 20px 5%;
+			}
+
 			&__prices-box {
 				width: 100%;
 			}

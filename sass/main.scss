@@ -358,6 +358,23 @@ html {
 			scale: 2;
 		}
 
+		// OFFER PICTURE LINE
+
+		&__picture-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		&__img-box-extra {
+			width: 45%;
+			max-width: 250px;
+			margin: 20px 2%;
+			border: 1px solid $dark-gray;
+		}
+
 		// OFFER PRICES
 
 		&__prices {
