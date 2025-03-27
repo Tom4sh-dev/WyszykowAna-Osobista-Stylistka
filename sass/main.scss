@@ -180,7 +180,7 @@ html {
 		}
 
 		&__textbox {
-			margin-bottom: 20px;
+			margin-bottom: 0;
 			text-align: left;
 		}
 	}
@@ -365,14 +365,14 @@ html {
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-			margin-bottom: 20px;
+			margin-bottom: 40px;
+			background-color: $light-gray;
 		}
 
 		&__img-box-extra {
 			width: 45%;
 			max-width: 250px;
 			margin: 20px 2%;
-			border: 1px solid $dark-gray;
 		}
 
 		// OFFER PRICES
