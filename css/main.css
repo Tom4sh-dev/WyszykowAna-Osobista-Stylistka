@@ -373,15 +373,12 @@ html {
 }
 .main .offer__btn {
   position: absolute;
-  top: calc(100% - 40px);
   left: 0;
   width: 40px;
   height: 40px;
   color: #fff;
   background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
   border: none;
-  cursor: pointer;
-  transition: 0.3s;
 }
 .main .offer__subtitle {
   padding: 80px 25px 40px;
@@ -495,6 +492,21 @@ html {
   max-width: 250px;
   margin: 20px 2%;
 }
+.main .offer .voucher-container {
+  flex-direction: column;
+  padding-top: 20px;
+}
+.main .offer .voucher {
+  width: 100%;
+}
+.main .offer .voucher__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.main .offer .voucher__text {
+  font-size: 14px;
+}
 .main .offer__prices {
   position: relative;
   display: flex;
@@ -552,9 +564,9 @@ html {
 }
 .main .offer__logo-box {
   position: absolute;
-  top: 100px;
+  top: calc(50% + 30px);
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: -10;
 }
 .main .offer__prices-logo {
@@ -715,12 +727,17 @@ html {
     font-size: 2rem;
   }
   .main .banner__btn {
-    color: #424242;
-    background-image: none;
-    border: 1px solid #900c50;
+    background-image: linear-gradient(220deg, #c0136c 0%, #5f0935 90%);
+    color: #fff;
+    width: 30%;
+    border: 1px solid transparent;
+    transition: 0.3s;
   }
   .main .banner__btn:hover {
-    border: 1px solid transparent;
+    background-image: none;
+    background-color: #fff;
+    color: #424242;
+    border: 1px solid #900c50;
   }
   .main .offer__btn:hover {
     padding-left: 10px;
@@ -839,6 +856,7 @@ html {
     gap: 10px;
     padding: 40px 40px;
     margin-bottom: 0;
+    margin-top: 40px;
   }
   .main .banner__img-box {
     grid-column-start: 2;
@@ -850,9 +868,10 @@ html {
     align-items: end;
     margin-left: 40px;
     height: 90%;
-    max-height: 500px;
+    max-height: 550px;
   }
   .main .banner__image {
+    padding: 0 30px;
     width: auto;
     height: 90%;
   }
@@ -891,9 +910,6 @@ html {
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
-  }
-  .main .banner__btn {
-    width: 30%;
   }
   .main .about-me__content {
     display: grid;
@@ -1032,8 +1048,13 @@ html {
     width: 100%;
   }
   .main .offer__prices-box {
-    padding-bottom: 40px;
-    padding: 0 0 40px 80px;
+    padding: 0 200px 40px 80px;
+  }
+  .main .offer .voucher-container {
+    flex-direction: row;
+  }
+  .main .offer .voucher-container .voucher {
+    width: 50%;
   }
   .main .reviews .review-box {
     margin: 60px 50px 10px;

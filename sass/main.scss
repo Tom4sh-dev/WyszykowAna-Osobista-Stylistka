@@ -234,17 +234,18 @@ html {
 		}
 		&__btn {
 			position: absolute;
-			top: calc(100% - 40px);
+			// top: calc(100% - 40px);
 			left: 0;
 			width: 40px;
 			height: 40px;
 			color: #fff;
 			background-image: $ras-gradient;
 			border: none;
-			cursor: pointer;
-			transition: 0.3s;
+			// cursor: pointer;
+			// transition: 0.3s;
 			
 		}
+		
 
 		&__subtitle {
 			padding: 80px 25px 40px;
@@ -374,6 +375,21 @@ html {
 			max-width: 250px;
 			margin: 20px 2%;
 		}
+		.voucher-container {
+			flex-direction: column;
+			padding-top: 20px;
+		}
+		.voucher {
+			width: 100%;
+			&__title {
+				font-size: 20px;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			&__text {
+				font-size: 14px;
+			}
+		}
 
 		// OFFER PRICES
 
@@ -441,9 +457,9 @@ html {
 
 		&__logo-box {
 			position: absolute;
-			top: 100px;
+			top: calc(50% + 30px);
 			left: 50%;
-			transform: translateX(-50%);
+			transform: translate(-50%, -50%);
 			z-index: -10;
 		}
 
@@ -593,6 +609,7 @@ html {
 			width: 100%;
 		}
 	}
+
 
 	// FOOTER
 
