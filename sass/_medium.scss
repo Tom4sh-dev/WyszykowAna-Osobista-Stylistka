@@ -40,16 +40,28 @@
 
 		// OFFER
 		.offer {
-			&__btn {
-				&:hover {
-					padding-left: 10px;
+			&__item {
+				&::after {
+					content: '';
+					height: 0;
+					width: 0;
 				}
 			}
-			&__btn-close {
-				&:hover {
-					padding-right: 10px;
-				}
+			&__more {
+				border-top: 1px solid $dark-gray;
+				border-bottom: 1px solid $dark-gray;
+				
 			}
+			// &__btn {
+			// 	&:hover {
+			// 		padding-left: 10px;
+			// 	}
+			// }
+			// &__btn-close {
+			// 	&:hover {
+			// 		padding-right: 10px;
+			// 	}
+			// }
 			&__prices-box {
 				margin-left: 10%;
 			}
