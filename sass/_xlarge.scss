@@ -13,6 +13,9 @@
 	}
     .header {
       .nav {
+        &__container {
+			padding: 10px 0 0;
+        }
         &__social-media{
             left: 10%;
         };

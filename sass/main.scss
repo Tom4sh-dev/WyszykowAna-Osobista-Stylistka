@@ -200,6 +200,25 @@ html {
 		&__image {
 			width: 80%;
 		}
+		&__cert-title {
+			font-size: 20px;
+			text-transform: uppercase;
+			margin: 40px 5%;
+		}
+		&__cert-container {
+			padding: 0 5%;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+	
+		&__cert-img-box {
+			width: 90%;
+			max-width: 300px;
+		}
+		&__cert-image {
+			width: 100%;
+		}
 	}
 
 	// OFFER
@@ -290,26 +309,30 @@ html {
 			padding: 5%;
 			margin-top: 40px;
 		}
-	
 
 		&__more-title {
 			width: 100%;
-			margin-bottom: 80px;
+			margin-bottom: 50px;
 			font-size: 2rem;
 		}
 
 		&__more-icon-container {
 			width: 50%;
 			text-align: center;
-
 		}
 		&__more-image-box {
 			width: 100%;
 		}
+		&__more-image-box-vert {
+			width: 90%;
+			max-width: 400px;
+			margin-bottom: 20px;
+		}
 		&__more-image {
 			width: 100%;
 		}
-		
+
+
 		&__more-icon {
 			width: 100%;
 			margin-bottom: 15px;
@@ -319,11 +342,30 @@ html {
 		}
 		&__more-text {
 			margin-bottom: 0;
-		};
+			padding: 0;
+		}
 		&__more-textbox {
 			display: block;
 			text-align: left;
+			padding: 0 5%;
 		}
+		&__more-textbox2 {
+			margin-bottom: 0;
+			padding: 0 5%;
+		}
+
+		&__more-wardrobe-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
+		&__more-textbox-wardrobe {
+			max-width: 600px;
+			
+		}
+	
 
 		// &__more {
 		// 	position: absolute;
@@ -413,23 +455,33 @@ html {
 		&__picture-container {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
+			justify-content: space-around;
 			align-items: center;
 			margin-bottom: 40px;
 			background-color: $light-gray;
 		}
 
 		&__img-box-extra {
-			width: 45%;
-			max-width: 250px;
-			margin: 20px 2%;
+			width: 50%;
+			max-width: 350px;
+			margin: 20px 0;
 		}
 		.voucher-container {
-			flex-direction: column;
-			padding-top: 20px;
+			padding: 40px 0;
 		}
 		.voucher {
 			width: 100%;
+			padding-bottom: 0;
+
+			&__img-box {
+				width: 90%;
+				max-width: 500px;
+				margin-bottom: 0;
+			}
+			&__image {
+				width: 100%;
+			}
+
 			&__title {
 				font-size: 20px;
 				text-transform: uppercase;

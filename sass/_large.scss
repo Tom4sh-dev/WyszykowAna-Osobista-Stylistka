@@ -123,7 +123,7 @@
 			gap: 10px;
 			padding: 40px 40px;
 			margin-bottom: 0;
-			margin-top: 40px;
+			margin-top: 20px;
 			&__img-box {
 				grid-column-start: 2;
 				grid-column-end: 7;
@@ -239,6 +239,14 @@
 				grid-row-start: 1;
 				grid-row-end: 4;
 			}
+			
+			&__cert-image {
+				transition: .3s;
+				&:hover{
+					scale: 2.5;
+					margin-bottom: 120px;
+				}
+			}
 		}
 
 		// OFFER
@@ -333,6 +341,18 @@
 			&__more-icon {
 				margin-bottom: 30px;
 			}
+			&__more-icon-img{
+				transition: .3s;
+				&:hover {
+					scale: 1.2;
+				}
+			}
+			&__more-image {
+				transition: .3s;
+				&:hover {
+					scale: 1.05;
+				}
+			}
 			// &__more {
 			// 	transform: translatey(-150%);
 			// 	&--active {
@@ -369,7 +389,7 @@
 			
 
 			&__img-box-extra {
-				margin: 20px 5%;
+				margin: 20px;
 			}
 
 			&__prices-box {
@@ -385,9 +405,14 @@
 			
 			.voucher-container {
 				flex-direction: row;
+				flex-wrap: wrap;
 				.voucher {
-					width: 50%;
+					width: 45%;
 					padding-right: 0;
+					padding: 0;
+					&__img-box {
+						width: 45%;
+					}
 					&__text {
 						font-size: 1.5rem;
 						letter-spacing: 1.5px;

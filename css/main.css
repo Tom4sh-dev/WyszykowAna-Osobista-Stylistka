@@ -346,6 +346,24 @@ html {
 .main .about-me__image {
   width: 80%;
 }
+.main .about-me__cert-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 40px 5%;
+}
+.main .about-me__cert-container {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main .about-me__cert-img-box {
+  width: 90%;
+  max-width: 300px;
+}
+.main .about-me__cert-image {
+  width: 100%;
+}
 .main .offer__item {
   position: relative;
   margin-bottom: 80px;
@@ -421,7 +439,7 @@ html {
 }
 .main .offer__more-title {
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   font-size: 2rem;
 }
 .main .offer__more-icon-container {
@@ -430,6 +448,11 @@ html {
 }
 .main .offer__more-image-box {
   width: 100%;
+}
+.main .offer__more-image-box-vert {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 20px;
 }
 .main .offer__more-image {
   width: 100%;
@@ -443,29 +466,53 @@ html {
 }
 .main .offer__more-text {
   margin-bottom: 0;
+  padding: 0;
 }
 .main .offer__more-textbox {
   display: block;
   text-align: left;
+  padding: 0 5%;
+}
+.main .offer__more-textbox2 {
+  margin-bottom: 0;
+  padding: 0 5%;
+}
+.main .offer__more-wardrobe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main .offer__more-textbox-wardrobe {
+  max-width: 600px;
 }
 .main .offer__picture-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
   background-color: #f6f6f6;
 }
 .main .offer__img-box-extra {
-  width: 45%;
-  max-width: 250px;
-  margin: 20px 2%;
+  width: 50%;
+  max-width: 350px;
+  margin: 20px 0;
 }
 .main .offer .voucher-container {
-  flex-direction: column;
-  padding-top: 20px;
+  padding: 40px 0;
 }
 .main .offer .voucher {
+  width: 100%;
+  padding-bottom: 0;
+}
+.main .offer .voucher__img-box {
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 0;
+}
+.main .offer .voucher__image {
   width: 100%;
 }
 .main .offer .voucher__title {
@@ -834,7 +881,7 @@ html {
     gap: 10px;
     padding: 40px 40px;
     margin-bottom: 0;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .main .banner__img-box {
     grid-column-start: 2;
@@ -933,6 +980,13 @@ html {
     grid-row-start: 1;
     grid-row-end: 4;
   }
+  .main .about-me__cert-image {
+    transition: 0.3s;
+  }
+  .main .about-me__cert-image:hover {
+    scale: 2.5;
+    margin-bottom: 120px;
+  }
   .main .offer__title {
     width: 50%;
     right: 0;
@@ -1014,8 +1068,20 @@ html {
   .main .offer__more-icon {
     margin-bottom: 30px;
   }
+  .main .offer__more-icon-img {
+    transition: 0.3s;
+  }
+  .main .offer__more-icon-img:hover {
+    scale: 1.2;
+  }
+  .main .offer__more-image {
+    transition: 0.3s;
+  }
+  .main .offer__more-image:hover {
+    scale: 1.05;
+  }
   .main .offer__img-box-extra {
-    margin: 20px 5%;
+    margin: 20px;
   }
   .main .offer__prices-box {
     width: 100%;
@@ -1028,10 +1094,15 @@ html {
   }
   .main .offer .voucher-container {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .main .offer .voucher-container .voucher {
-    width: 50%;
+    width: 45%;
     padding-right: 0;
+    padding: 0;
+  }
+  .main .offer .voucher-container .voucher__img-box {
+    width: 45%;
   }
   .main .offer .voucher-container .voucher__text {
     font-size: 1.5rem;
@@ -1074,6 +1145,9 @@ html {
   }
   .textbox {
     padding: 0 5%;
+  }
+  .header .nav__container {
+    padding: 10px 0 0;
   }
   .header .nav__social-media {
     left: 10%;
