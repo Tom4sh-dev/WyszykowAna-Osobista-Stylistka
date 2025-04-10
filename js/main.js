@@ -1,4 +1,4 @@
-
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.addEventListener('DOMContentLoaded', function () {
 	const btnsPrices = document.querySelectorAll('.offer__prices-btn');
