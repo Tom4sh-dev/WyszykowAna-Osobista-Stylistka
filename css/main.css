@@ -149,6 +149,7 @@
   width: 100%;
   font-size: 1.4rem;
   letter-spacing: 1px;
+  line-height: 1.5;
 }
 
 .img-box {
@@ -425,6 +426,7 @@ html {
 }
 .main .offer__list-title {
   align-self: start;
+  margin-bottom: 10px;
 }
 .main .offer__list {
   margin: 10px 0;
@@ -439,11 +441,19 @@ html {
 }
 .main .offer__more-title {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   font-size: 2rem;
+  line-height: 1.8;
+}
+.main .offer__more-bottom-text {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 60px;
+  line-height: 1.8;
+  font-style: italic;
 }
 .main .offer__more-icon-container {
-  width: 50%;
+  width: 45%;
   text-align: center;
 }
 .main .offer__more-image-box {
@@ -463,6 +473,9 @@ html {
 }
 .main .offer__more-icon-img {
   width: 50%;
+}
+.main .offer__more-icon-title {
+  margin-bottom: 10px;
 }
 .main .offer__more-text {
   margin-bottom: 0;

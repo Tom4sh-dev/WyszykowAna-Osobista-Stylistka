@@ -294,6 +294,7 @@ html {
 		}
 		&__list-title {
 			align-self: start;
+			margin-bottom: 10px;
 		}
 		&__list {
 			margin: 10px 0;
@@ -310,14 +311,23 @@ html {
 			margin-top: 40px;
 		}
 
+		
 		&__more-title {
 			width: 100%;
-			margin-bottom: 50px;
+			margin-bottom: 80px;
 			font-size: 2rem;
+			line-height: 1.8;
+		}
+		&__more-bottom-text {
+			width: 100%;
+			font-size: 2rem;
+			margin-top: 60px;
+			line-height: 1.8;
+			font-style: italic;
 		}
 
 		&__more-icon-container {
-			width: 50%;
+			width: 45%;
 			text-align: center;
 		}
 		&__more-image-box {
@@ -339,6 +349,9 @@ html {
 		}
 		&__more-icon-img {
 			width: 50%;
+		}
+		&__more-icon-title {
+			margin-bottom: 10px;
 		}
 		&__more-text {
 			margin-bottom: 0;
@@ -366,89 +379,6 @@ html {
 			
 		}
 	
-
-		// &__more {
-		// 	position: absolute;
-		// 	top: 0;
-		// 	bottom: 0;
-		// 	right: 0;
-		// 	left: 0;
-		// 	display: flex;
-		// 	flex-direction: column;
-		// 	z-index: 10;
-		// 	background-color: $light-gray;
-		// 	overflow: hidden;
-		// 	transition: transform 1s;
-		// 	transform: translateX(-150%);
-		// 	&--active {
-		// 		transform: translatex(0);
-		// 	}
-		// }
-
-		// &__more-textbox {
-		// 	text-align: left;
-		// }
-		// &__more-title {
-		// 	margin-top: 40px;
-		// 	padding: 5px;
-		// 	align-self: center;
-		// 	text-transform: uppercase;
-		// 	font-size: 2rem;
-		// 	font-weight: 400;
-		// }
-
-		// &__more-squares-box {
-		// 	margin: 40px 0;
-		// 	display: flex;
-		// 	width: 100%;
-		// 	justify-content: space-evenly;
-		// }
-
-		// .square {
-		// 	height: 40px;
-		// 	width: 40px;
-		// }
-
-		// &__more-square1 {
-		// 	background-color: #fff;
-		// }
-		// &__more-square2 {
-		// 	background-color: $raspberry;
-		// }
-		// &__more-square3 {
-		// 	background-color: #5d1a7a;
-		// }
-		// &__more-square4 {
-		// 	background-color: #00636a;
-		// }
-		// &__more-square5 {
-		// 	background-color: #3c3b3b;
-		// }
-
-		// &__btn-close {
-		// 	position: absolute;
-		// 	top: 0;
-		// 	right: 0;
-		// 	width: 40px;
-		// 	height: 40px;
-		// 	color: #fff;
-		// 	background-image: $ras-gradient;
-		// 	border: none;
-		// 	cursor: pointer;
-		// 	transition: 0.3s;
-		// 	z-index: 10;
-		// }
-
-		// &__more-img {
-		// 	margin-top: 30px;
-		// }
-
-		// &__more-logo {
-		// 	position: absolute;
-		// 	bottom: 0;
-		// 	opacity: 0.05;
-		// 	scale: 2;
-		// }
 
 		// OFFER PICTURE LINE
 
